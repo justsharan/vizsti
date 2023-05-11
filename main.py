@@ -47,4 +47,4 @@ def update_graph(location, cause):
     dff = df[(df['location_name'] == location) & (df['cause_name'] == cause)]
     return px.bar(dff, x='age_name', y='val', labels={'age_name': 'Age Group', 'val': 'Prevalence (per 100k)'})
 
-app.run_server(debug=True)
+app.run_server()
